@@ -6,7 +6,7 @@ def perceptron_margin_classifier(data, labels, T):
     data = np.append(data, np.ones((data.shape[0], 1)), axis=1)
 
     # Initialize the weights (including the bias) to zero
-    th = np.zeros(data.shape[1])
+    th = np.array([0, 1, -0.5])
 
     # Initialize the margin to infinity for comparing
     margin = np.inf
